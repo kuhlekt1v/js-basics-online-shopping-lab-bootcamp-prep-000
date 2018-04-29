@@ -26,7 +26,7 @@ function viewCart() {
       message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}.`;
       break;
     case 2:
-      message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[0].itemName} at $${cart[0].itemPrice}.`;
+      message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
       break;
     case 3:
       message = `${message}${cart[2].itemName} at $${cart[2].itemPrice}.`;
