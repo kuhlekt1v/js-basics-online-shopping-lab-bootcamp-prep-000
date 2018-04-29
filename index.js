@@ -25,8 +25,6 @@ function viewCart() {
     case 1:
       message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}.`;
       break;
-    case 2:
-      message = 
 }
   
   if ( cart.length == 0 ) {
