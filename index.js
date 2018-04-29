@@ -39,7 +39,7 @@ function total() {
   var pricePerItemInCart = [];
   var totalPrice;
   for (var i = 0; i < cart.length; i++) {
-    var itemPrice = cart[i]
+    var itemPrice = {cart[i]; ${cart[0].itemName} }
   }
 }
 function removeFromCart(itemName) {
