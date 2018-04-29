@@ -34,7 +34,14 @@ function viewCart() {
   }
   return message;
 }
-  
+
+function total() {
+  var pricePerItemInCart = [];
+  var totalPrice;
+  for (var i = 0; i < cart.length; i++) {
+    var itemPrice = cart[i]
+  }
+}
 function removeFromCart(itemName) {
   var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
