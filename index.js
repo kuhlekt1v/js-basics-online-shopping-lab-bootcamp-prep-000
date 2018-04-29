@@ -22,7 +22,7 @@ function viewCart() {
       message = "Your cart is empty.";
       break;
     case 1:
-      message = `In your cart, you have ${cart[0].itemName} at $${cart[0].price}.`;
+      message = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
       break;
 }
   
