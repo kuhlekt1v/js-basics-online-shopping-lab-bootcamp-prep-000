@@ -36,12 +36,13 @@ function viewCart() {
 }
 
 function total() {
-  var pricePerItemInCart = [];
-  var totalPrice;
-  for (var i = 0; i < cart.length; i++) {
-    var itemPrice = {cart[i]; ${cart[0].itemName} }
-  }
+ var total = 0;
+ for ( var i = 0; i < cart.length; i++) {
+   total += cart[i].item.Price;
+ }
+ return total;
 }
+
 function removeFromCart(itemName) {
   var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
