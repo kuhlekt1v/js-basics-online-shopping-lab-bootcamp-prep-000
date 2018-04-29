@@ -35,13 +35,6 @@ function viewCart() {
   return message;
 }
   
-  if ( cart.length == 0 ) {
-    return "Your shopping cart is empty."
-  } else {
-    return message;
-  }
-}
-
 function removeFromCart(itemName) {
   var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
