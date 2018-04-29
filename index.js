@@ -31,9 +31,9 @@ function viewCart() {
     case 3:
       message = `${message}${cart[2].itemName} at $${cart[2].itemPrice}.`;
       break;
+  } 
 }
   
-
 function removeFromCart(itemName) {
   var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
