@@ -16,8 +16,8 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var message = "In your cart, you have "
-  message = `${message}`
+  var message = "In your cart, you have ";
+  message = `${message}`;
   switch(cart.length) {
     case 0:
       message = "Your cart is empty.";
