@@ -26,14 +26,22 @@ function viewCart() {
       message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}.`;
       break;
     case 2:
-      message = `${message}${cart[1].itemName} at $${cart[1].itemPrice}.`;
+      message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}.`;
       break;
     case 3:
       message = `${message}${cart[2].itemName} at $${cart[2].itemPrice}.`;
       break;
-  } 
+  }
+  return message;
 }
   
+  if ( cart.length == 0 ) {
+    return "Your shopping cart is empty."
+  } else {
+    return message;
+  }
+}
+
 function removeFromCart(itemName) {
   var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
