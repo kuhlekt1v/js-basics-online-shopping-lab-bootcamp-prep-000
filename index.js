@@ -20,7 +20,7 @@ function viewCart() {
   message = `${message}`;
   switch(cart.length) {
     case 0:
-      message = "Your cart is empty.";
+      message = "Your shopping cart is empty.";
       break;
     case 1:
       message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}.`;
