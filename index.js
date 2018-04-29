@@ -16,14 +16,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var message;
+  var message = "In your cart you have "
+  message = `${message}`
   switch(cart.length) {
     case 0:
       message = "Your cart is empty.";
       break;
     case 1:
-      message = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
+      message = `${message}${cart[0].itemName} at $${cart[0].itemPrice}.`;
       break;
+    case 2:
+      message = `
 }
   
   if ( cart.length == 0 ) {
