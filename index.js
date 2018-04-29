@@ -43,9 +43,12 @@ function total() {
  return total;
 }
 
-function removeFromCart(itemName) {
-  var itemToRemove = searchCartForItemToRemove(itemName)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+function removeFromCart(item) {
+ for (i = 0; i < cart.length; i++) {
+   if(cart[i].itemName === item)
+   cart.splice(i, 1);
+   return cart;
+ }
 }
 
 function placeOrder(cardNumber) {
