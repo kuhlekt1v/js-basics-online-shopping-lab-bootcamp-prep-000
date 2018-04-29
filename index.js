@@ -16,7 +16,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var message = "In your cart you have "
+  var message = "In your cart, you have "
   message = `${message}`
   switch(cart.length) {
     case 0:
